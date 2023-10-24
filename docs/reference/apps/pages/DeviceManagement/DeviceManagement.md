@@ -9,12 +9,13 @@ The Device Management page allows to manage the devices connected to the Zerynth
 ![edge_devices_image]
 
 The Edge Devices page shows the list of devices linked to the current workspace of the _Zerynth Industrial IoT & AI Platform_. For each device, the table shows the following information:
-- **Name**: the name of the device
-- **ID**: the unique identifier of the device;
-- **Fleet**: the fleet the device belongs to;
-- **Created at**: the date and time of the device creation (expressed in local time);
-- **Status**: the connection status of the device;
-- **Features**: eventual additional features of the device (such as the claim of a physical device or a SIM Card).
+
+* **Name**: the name of the device
+* **ID**: the unique identifier of the device;
+* **Fleet**: the fleet the device belongs to;
+* **Created at**: the date and time of the device creation (expressed in local time);
+* **Status**: the connection status of the device;
+* **Features**: eventual additional features of the device (such as the claim of a physical device or a SIM Card).
 
 The table can be sorted by any of the columns, and the sorting order can be reversed by clicking again on the same column.
 
@@ -33,11 +34,12 @@ This page shows an overview of the device, with some basic informations about co
 ![edge_devices_single_device_overview_image]
 
 This page is divided in multiple cards, which show the following columns:
-- **Connection status**: the connection status of the device, with the last connection and its relative IP address, other than the amount of disconnections in the last 24 hours and in the last week
-- **Recent data**: a graph showing dots for every message sent by the device in the last hour
-- **Hardware**: the serial number of the device, with its device type (if associated to a physical device), the firmware version and the Zerynth OS version
-- **Latest job**: the latest job sent to the device, with its status and the date and time of the job request
-- **Last FOTA**: the last FOTA sent to the device, with its status and the date and time of the FOTA request
+
+* **Connection status**: the connection status of the device, with the last connection and its relative IP address, other than the amount of disconnections in the last 24 hours and in the last week
+* **Recent data**: a graph showing dots for every message sent by the device in the last hour
+* **Hardware**: the serial number of the device, with its device type (if associated to a physical device), the firmware version and the Zerynth OS version
+* **Latest job**: the latest job sent to the device, with its status and the date and time of the job request
+* **Last FOTA**: the last FOTA sent to the device, with its status and the date and time of the FOTA request
 
 
 #### Jobs & FOTA
@@ -45,8 +47,9 @@ This page is divided in multiple cards, which show the following columns:
 ![edge_devices_single_device_jobs_fota_image]
 
 This page shows the history of jobs and FOTA sent to the device, with two main cards showing the following columns:
-- **Jobs status**: the name of the job, with the timestamp of the job request, its payload and the status of the job, which can be Pending, Done or Failed
-- **FOTA status**: the name of the FOTA, with the timestamp of the FOTA request, its payload and the status of the FOTA, which can be Pending, Done or Failed
+
+* **Jobs status**: the name of the job, with the timestamp of the job request, its payload and the status of the job, which can be Pending, Done or Failed
+* **FOTA status**: the name of the FOTA, with the timestamp of the FOTA request, its payload and the status of the FOTA, which can be Pending, Done or Failed
 
 
 #### Activity
@@ -57,10 +60,11 @@ the Cloud.
 ![edge_devices_single_device_activity_image]
 
 The activity is shown with a table showing the following columns:
-- **Timestamp**: the timestamp of the activity
-- **Event type**: the type of the event which occured
-- **Direction**: the direction of the event, which can be Cloud to Device or Device to Cloud
-- **Payload**: the payload of the event
+
+* **Timestamp**: the timestamp of the activity
+* **Event type**: the type of the event which occured
+* **Direction**: the direction of the event, which can be Cloud to Device or Device to Cloud
+* **Payload**: the payload of the event
 
 This table can be sorted by any of the columns, and the sorting order can be reversed by clicking again on the same column.
 
@@ -94,11 +98,11 @@ The Firmwares page shows the list of firmwares uploaded to the current workspace
 
 For each firmware, there is a card showing the following information:
 
-- **Name**: the name of the firmware
-- **ID**: the unique identifier of the firmware
-- **Creation date**: the date of the firmware creation
-- **Version**: the version of the firmware
-- **Owner**: the owner of the firmware
+* **Name**: the name of the firmware
+* **ID**: the unique identifier of the firmware
+* **Creation date**: the date of the firmware creation
+* **Version**: the version of the firmware
+* **Owner**: the owner of the firmware
 
 For each firmware, there is a `Schedule FOTA` button, which allows the user to schedule a FOTA for a single device or an entire fleet.
 
@@ -114,13 +118,13 @@ The SIM Cards page shows the list of SIM Cards linked to the current workspace o
 
 For each SIM Card, the table shows the following columns:
 
-- **ICCID**: the ICCID of the SIM Card
-- **Workspace**: the workspace the SIM Card belongs to
-- **Device**: the device the SIM Card is linked to
-- **Plan activation**: the date of the plan activation
-- **Plan expiration**: the date of the plan expiration
-- **Data usage**: the amount of data used by the SIM Card
-- **Status**: the status of the SIM Card, which can be Active, Suspended or Expired
+* **ICCID**: the ICCID of the SIM Card
+* **Workspace**: the workspace the SIM Card belongs to
+* **Device**: the device the SIM Card is linked to
+* **Plan activation**: the date of the plan activation
+* **Plan expiration**: the date of the plan expiration
+* **Data usage**: the amount of data used by the SIM Card
+* **Status**: the status of the SIM Card, which can be Active, Suspended or Expired
 
 At the bottom of the table, there is a button which allows to change the view, showing the SIM Cards grouped by account instead of workspace.
 

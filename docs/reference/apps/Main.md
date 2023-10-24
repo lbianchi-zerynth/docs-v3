@@ -12,7 +12,7 @@ Thanks to dashboards and tools organised by Application (App), it is possible to
 
 According to the specific package purchased, one or more Applications are enabled in the _Zerynth Industrial IoT & AI Platform_ in order to allow end users to monitor real-time  operating states and health of industrial assets, maximise the efficiency and the performance of manufacturing processes, analyse and optmize energy consumption and related costs, minimise downtime, and manage the maintenance status.
 
-The available Applications are the following:
+The following Applications are available:
 
 * **Machine Monitoring**
 * **Machine Maintenance**
@@ -39,7 +39,7 @@ If you are not a Zerynth customer yet, don't hesitate and [get in contact with o
 Additional requirements are:
 
 * A stable internet connection (WiFi or 3G or better mobile connection);
-* Any up-to-date browser (Chrome, Edge, Opera, Firefox, Safari).
+* Any up-to-date browser (Chrome, Edge, Opera, Safari).
 
 ## Sign in and Sign up
 

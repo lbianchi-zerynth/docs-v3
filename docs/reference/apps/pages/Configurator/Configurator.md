@@ -6,8 +6,8 @@ that is relevant to you.
 ![configurator_image]
 
 You can choose to configure the device in two ways:
-- [Basic](#basic-configuration)
-- [Advanced](#advanced-configuration)
+* [Basic](#basic-configuration)
+* [Advanced](#advanced-configuration)
 
 ## Basic configuration
 
@@ -15,7 +15,7 @@ The basic configuration is a wizard which allows you to configure a machine in a
 
 Firstly, you will be asked to choose your machine type.
 Refer to the Knowledge Base for more information.
-- >When selecting `Auxiliary machine`, you will be asked to provide a name for the machine, and the power settings for t too.
+* >When selecting `Auxiliary machine`, you will be asked to provide a name for the machine, and the power settings for t too.
 	>
 	>You will have to choose what kind of power supply the machine uses, and if you want to add a power threshold	to recognize the working status of the machine.
 	>
@@ -23,7 +23,7 @@ Refer to the Knowledge Base for more information.
 	>
 	>Finally, you will need to choose which Zerynth device you want to use to monitor the machine and the type of	internet connection it will use.
 
-- >When selecting `Production machine`, you will be asked to provide a name for the machine, and the power settings for it too.
+* >When selecting `Production machine`, you will be asked to provide a name for the machine, and the power settings for it too.
   >
   >You will have to choose whether the machine will be running with a pieces counter, as well as a defected pieces counter.
 	>
@@ -33,7 +33,7 @@ Refer to the Knowledge Base for more information.
   >
   >Finally, you will need to choose which Zerynth device you want to use to monitor the machine and the type of internet connection it will use.
 
-- >When selecting `Electrical panel`, you will be asked to provide a name for the machine, and the power settings for it too.
+* >When selecting `Electrical panel`, you will be asked to provide a name for the machine, and the power settings for it too.
   >
   >This includes the network voltage, the input voltage and amperage, the output lines details, the lines' amperage thresholds, and the maximum input amperage.
   >

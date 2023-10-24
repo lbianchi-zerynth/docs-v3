@@ -5,23 +5,25 @@ This section describes the standard payloads that should be sent from the device
 We will analyse the different types of machines available, and for each type, we will define a standard payload.
 
 The following payload types are already available:
-- **Data**, which is the recurring payload sent by the device to monitor the machine;
-- **Status**, which is the payload informing the platform of a status change in the machine;
-- **Input and output lines status**, which is used for the cabinets to inform the platform of a status change in the lines;
-- **Threshold Alarm**, whch informs the platform of one or more alarms triggered by a threshold;
-- **Digital Alarm**, which informs the platform of one or more alarms triggered by a digital signal.
+
+* **Data**, which is the recurring payload sent by the device to monitor the machine;
+* **Status**, which is the payload informing the platform of a status change in the machine;
+* **Input and output lines status**, which is used for the cabinets to inform the platform of a status change in the lines;
+* **Threshold Alarm**, whch informs the platform of one or more alarms triggered by a threshold;
+* **Digital Alarm**, which informs the platform of one or more alarms triggered by a digital signal.
 
 To know more about machine types, refer to the Knowledge Base.
 
 ## Production Machine
 
 For a Production Machine, the following Zerynth Apps require the standard payloads:
-- **Home Page**;
-- **Machine Monitoring**, in the Machines section;
-- **Production Insights**;
-- **Maintenance**;
-- **Reports**;
-- **Rules**.
+
+* **Home Page**;
+* **Machine Monitoring**, in the Machines section;
+* **Production Insights**;
+* **Maintenance**;
+* **Reports**;
+* **Rules**.
 
 ### Data
 
@@ -65,12 +67,13 @@ For a Production Machine, the following Zerynth Apps require the standard payloa
 ## Auxiliary Machine
 
 For an Auxiliary Machine, the following Zerynth Apps require the standard payloads:
-- **Home Page**;
-- **Machine Monitoring**, in the Machines section;
-- **Machine Control**;
-- **Maintenance**;
-- **Reports**;
-- **Rules**.
+
+* **Home Page**;
+* **Machine Monitoring**, in the Machines section;
+* **Machine Control**;
+* **Maintenance**;
+* **Reports**;
+* **Rules**.
 
 ### Data
 
@@ -113,11 +116,12 @@ For an Auxiliary Machine, the following Zerynth Apps require the standard payloa
 ## Electrical Panel
 
 For an Electrical Panel, the following Zerynth Apps require the standard payloads:
-- **Home Page**;
-- **Machine Monitoring**, in the Electrical panels section;
-- **Maintenance**;
-- **Reports**;
-- **Rules**.
+
+* **Home Page**;
+* **Machine Monitoring**, in the Electrical panels section;
+* **Maintenance**;
+* **Reports**;
+* **Rules**.
 
 ### Data
 
@@ -164,11 +168,12 @@ For an Electrical Panel, the following Zerynth Apps require the standard payload
 ## Electrical Panel with Advanced Power Consumption Analyzer
 
 For an Electrical Panel with Advanced Power Consumption Analyzer, the following Zerynth Apps require the standard payloads:
-- **Home Page**;
-- **Machine Monitoring**, in the Electrical panels section;
-- **Maintenance**;
-- **Reports**;
-- **Rules**.
+
+* **Home Page**;
+* **Machine Monitoring**, in the Electrical panels section;
+* **Maintenance**;
+* **Reports**;
+* **Rules**.
 
 ### Data
 

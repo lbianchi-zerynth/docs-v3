@@ -1,6 +1,7 @@
 # Production Insights App
 
 The Production Insights app provides an insight of the production situation of the machines.
+
 It is available in the Production Insights package.
 
 ## Overview
@@ -38,17 +39,18 @@ It also shows the quality of the pieces (good pieces/total pieces) made by each 
 ![production_insights_machines_image]
 
 In the machines page of the Production Insights app, there is a table with a list of all the machines in the workspace. For each machine, you can find the following information:
-- **Name** of the machine;
-- **Status** of the machine;
-- **Alarm**, which shows a warning icon if the machine is in alarm status;
-- **Total alarm time** of the machine in the selected time range;
-- **Average cycle time** of the machine;
-- **Total pieces** produced by the machine in the selected time range;
-- **Good pieces** produced by the machine in the selected time range;
-- **Availability** of the machine, which is calculated as the percentage of the time the machine was in working status;
-- **Performance** of the machine, which is calculated as the percentage of the time the machine was in working status and the cycle time was equal or less than the average cycle time;
-- **Quality** of the machine, which is calculated as the percentage of the good pieces produced by the machine;
-- **OEE** of the machine, which is calculated as the product of the availability, performance and quality of the machine.
+
+* **Name** of the machine;
+* **Status** of the machine;
+* **Alarm**, which shows a warning icon if the machine is in alarm status;
+* **Total alarm time** of the machine in the selected time range;
+* **Average cycle time** of the machine;
+* **Total pieces** produced by the machine in the selected time range;
+* **Good pieces** produced by the machine in the selected time range;
+* **Availability** of the machine, which is calculated as the percentage of the time the machine was in working status;
+* **Performance** of the machine, which is calculated as the percentage of the time the machine was in working status and the cycle time was equal or less than the average cycle time;
+* **Quality** of the machine, which is calculated as the percentage of the good pieces produced by the machine;
+* **OEE** of the machine, which is calculated as the product of the availability, performance and quality of the machine.
 
 The table can be sorted by any of the columns, and the sorting order can be reversed by clicking again on the same column.
 
@@ -60,6 +62,7 @@ Clicking on a machine name will redirect you to the single machine page.
 ## Single Machine
 
 ![production_insights_single_machine_image1]
+
 ![production_insights_single_machine_image2]
 
 The single machine view goes into detail of the selected machine. 
@@ -77,12 +80,13 @@ It also shows the availability, the performance and the quality of the machine, 
 ### Production time
 
 The production time section shows a bar graph indicating:
-- **Total production time**, based on the average cycle time;
-- **All time**, which is the total time of the selected time range;
-- **Planned production time**;
-- **Run time**;
-- **Net run time**;
-- **Fully productive time**.
+
+* **Total production time**, based on the average cycle time;
+* **All time**, which is the total time of the selected time range;
+* **Planned production time**;
+* **Run time**;
+* **Net run time**;
+* **Fully productive time**.
 
 ### Machine status
 

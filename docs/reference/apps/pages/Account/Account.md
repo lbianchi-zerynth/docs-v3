@@ -15,12 +15,13 @@ If you choose to create a new workspace, you will be asked to provide a name for
 ![new_workspaces_image]
 
 After creating or selecting a workspace, you will be redirected to the home page of the selected workspace. 
-Else, you will remain on the home page of the current workspace.
 
 ## Account settings
 
 From the account settings, it is possible to change details about your account.
+
 ![account_settings_image]
+
 If the change you want to make is not possible from this tab, you can contact the Zerynth Team using the `Contact us` button at the bottom of the page.
 
 ### Personal info
@@ -38,12 +39,15 @@ In the security tab, you can check the last login activity and change your passw
 ## Switch to light/dark mode
 
 This button switches the interface between dark and light mode.
+
 ![dark_mode_image]
+
 ![light_mode_image]
 
 ## Logout
 
 The logout button logs you out of the current account and redirects you to the login page.
+
 ![login_image]
 
 [//]: #                   (Images)

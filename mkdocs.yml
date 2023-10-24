@@ -175,7 +175,21 @@ nav:
         - reference/examples/zerynth-os/adc.md
         - reference/examples/zerynth-os/watchdog.md
   - Cloud Applications:
-      {Introduction: reference/apps/Main.md}
+    - {Introduction: reference/apps/Main.md}
+    - reference/apps/pages/MachineMonitoring/MachineMonitoring.md
+    - reference/apps/pages/Reports/Reports.md
+    - reference/apps/pages/Maintenance/Maintenance.md
+    - reference/apps/pages/EngineRules/EngineRules.md
+    - reference/apps/pages/ProductionInsights/ProductionInsights.md
+    - reference/apps/pages/ProductionTracking/ProductionTracking.md
+    - reference/apps/pages/MachineControl/MachineControl.md
+    - reference/apps/pages/CustomDashboards/CustomDashboards.md
+    - reference/apps/pages/DeviceManagement/DeviceManagement.md
+    - reference/apps/pages/DataManagement/DataManagement.md
+    - reference/apps/pages/Payloads/Payloads.md
+    - reference/apps/pages/Settings/Settings.md
+    - reference/apps/pages/Account/Account.md
+    - reference/apps/pages/KnowledgeBase/KnowledgeBase.md
   - Cloud APIs:
     - reference/api/authentication/index.md
     - reference/api/zdm/index.md

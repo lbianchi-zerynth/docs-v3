@@ -10,6 +10,7 @@ An example of this Application is the following: if a machine has a consumption 
 The rules are the core of the Engine Rules Application. Rules can be used to set the conditions to be met in order to trigger an alarm.
 
 The rules are divided into three main categories:
-- **Machine Monitoring**, which allows for rules to be set on the power or consumption coming from the machine;
-- **Maintenance**, which allows for rules to be set on new maintenances performed on the machine;
-- **Custom**, which allows for rules to be set on parameters specified by the user.
+
+* **Machine Monitoring**, which allows for rules to be set on the power or consumption coming from the machine;
+* **Maintenance**, which allows for rules to be set on new maintenances performed on the machine;
+* **Custom**, which allows for rules to be set on parameters specified by the user.
