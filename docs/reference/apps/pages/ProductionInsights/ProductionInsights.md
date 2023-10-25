@@ -1,8 +1,9 @@
 # Production Insights App
 
-The Production Insights app provides an insight of the production situation of the machines.
+???+ question "How to obtain the Production Insights App?"
+  	The Production Insights Application is available in the Production Insights package of the _Zerynth Industrial IoT & AI Platform_.
 
-It is available in the Production Insights package.
+The Production Insights app provides an insight of the production situation of the machines.
 
 ## Overview
 

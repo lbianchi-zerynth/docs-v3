@@ -1,5 +1,8 @@
 # Machine Control App
 
+???+ question "How to obtain the Machine Control App?"
+  	The Machine Control Application is available in the Control package of the _Zerynth Industrial IoT & AI Platform_.
+
 The Machine Control application allows you to execute jobs on your machines remotely. From the main screen you will see the devices that are enabled to be controlled remotely.
 
 ## Overview

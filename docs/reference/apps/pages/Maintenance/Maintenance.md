@@ -1,5 +1,8 @@
 # Maintenance App
 
+???+ question "How to obtain the Maintenance App?"
+    The Maintenance Application is included in the base package of the _Zerynth Industrial IoT & AI Platform_.
+
 The Maintenance App allows for monitoring the status of the machinery and for scheduling maintenance operations.
 
 ## Overview

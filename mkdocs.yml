@@ -17,6 +17,7 @@ markdown_extensions:
 - pymdownx.betterem: {smart_enable: all}
 - pymdownx.caret
 - pymdownx.critic
+- pymdownx.details
 - pymdownx.inlinehilite
 - pymdownx.magiclink
 - pymdownx.mark
@@ -190,6 +191,10 @@ nav:
     - reference/apps/pages/Settings/Settings.md
     - reference/apps/pages/Account/Account.md
     - reference/apps/pages/KnowledgeBase/KnowledgeBase.md
+  - Configurator:
+    - {Introduction: reference/apps/pages/Configurator/Configurator.md}
+    - reference/apps/pages/Configurator/Basic/Basic.md
+    - reference/apps/pages/Configurator/Advanced/Advanced.md
   - Cloud APIs:
     - reference/api/authentication/index.md
     - reference/api/zdm/index.md

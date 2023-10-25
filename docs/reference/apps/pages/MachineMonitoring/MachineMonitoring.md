@@ -1,6 +1,9 @@
 # Machine Monitoring App
 
-The Machine Monitoring Application represents the base package of the _Zerynth Industrial IoT & AI Platform_, and it enables:
+???+ question "How to obtain the Machine Monitoring App?"
+    The Machine Monitoring Application is included in the base package of the _Zerynth Industrial IoT & AI Platform_.
+
+The Machine Monitoring Application enables:
 
 * States and alarm monitoring of machines;
 * Consumption analysis and monitoring of machines and areas/buildings;
@@ -25,10 +28,8 @@ The header shows information about all the machines:
 
 * **Current power**, which is the sum of the current power of all the machines;
 * **Total consumption** in kWh in the selected time period;
-* **Total costs** in the selected time period, based on the currency and energy cost.
-  Refer to the Settings page for more information;
-* **Energy contributions**, which is a pie chart that displays the distribution of the energy consumption based on the machine type.
-  By hovering over it, you will see the total energy consumption (in kWh) of every type.
+* **Total costs** in the selected time period, based on the currency and energy cost. Refer to the Settings page for more information;
+* **Energy contributions**, which is a pie chart that displays the distribution of the energy consumption based on the machine type. By hovering over it, you will see the total energy consumption (in kWh) of every type.
 
 Both the consumption and the costs have a delta (in percentage) inside the card. That is a reference to the previous period, which is the same length as the selected interval, moved in the immediate past.
 

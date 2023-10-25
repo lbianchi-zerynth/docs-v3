@@ -1,6 +1,9 @@
 # Reports App
 
-The Reports Application is included in the Base Package of the _Zerynth Industrial IoT & AI Platform_, and it allows the user to create and manage reports based on templates developed with the customer in mind.
+???+ question "How to obtain the Reports App?"
+  	The Reports Application is included in the base package of the _Zerynth Industrial IoT & AI Platform_.
+
+The Reports Application allows the user to create and manage reports based on templates developed with the customer in mind.
 
 The application is divided in two tabs:
 
