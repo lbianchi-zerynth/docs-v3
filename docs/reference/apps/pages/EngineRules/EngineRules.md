@@ -20,13 +20,32 @@ The rules are divided into three main categories:
 * **Production Insights**, which allows for rules to be set on various production KPIs of the machine;
 * **Maintenance**, which allows for rules to be set on the maintenance interventions and upcoming maintenances of the machine.
 
-* Notification name
-* machine (singole macchine o se vuoto sinottico)
-* parameter
-* operator
-* threshold
-* time range (finestra temporale in cui deve essere verificata la condizione)
-* conf period
-* channel + destination
+### Machine Monitoring Rules
 
-sempre un minuto di buffer per aggiornamenti alla rule (minuto preciso)
+The Machine Monitoring rules allow for rules to be set on the power or consumption coming from the machine.
+
+When creating a rule, the following parameters can be set:
+* **Notification name**: The name of the notification that will be sent when the rule is triggered;
+* **Machine**: The machine on which the rule will be applied. If no machine is selected, the rule will be applied to all the machines in the workspace;
+* **Parameter**: The parameter on which the rule will be applied. The available parameters are:
+	* **Consumption**: The consumption of the machine;
+	* **Power**: The power of the machine;
+* **Operator**: The operator to be used in the rule. The available operators are:
+	* **>**: greater than;
+	* **<**: less than;
+	* **==**: equal to;
+  * **!=**: not equal to;
+	* **>=**: greater than or equal to;
+	* **<=**: less than or equal to;
+* **Threshold**: The threshold value to be used in the rule. The available units are:
+	* **Wh**: Watt-hour (when the parameter is Consumption);
+	* **W**: Watt (when the parameter is Power);
+* **Time range**: The range of time in which the rule will be applied. The available time ranges are:
+	* **5 minutes**: the last 5 minutes;
+  * **10 minutes**: the last 10 minutes;
+  * **15 minutes**: the last 15 minutes;
+  * **30 minutes**: the last 30 minutes;
+  * **1 hour**: the last hour;
+* **Confirmation period**: The amount of time to wait when the condition is met before activating the alert;
+* **Channel**: The channel on which the notification will be sent (email or Google Chat);
+* **Destinations**: The destination of the notification (email address or Google Chat room).
