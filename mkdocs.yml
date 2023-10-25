@@ -198,8 +198,6 @@ nav:
   - Changelog: reference/changelogs/index.md
   - What's new in SDK v3.x: reference/changelogs/whatsnew.md
 
-
-
 plugins:
 - search
 - minify: {minify_html: true}

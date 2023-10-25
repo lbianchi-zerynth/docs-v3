@@ -13,13 +13,53 @@ The internal filesystem can also be automatically formatted and loaded with file
 !!! note
     In general the `fs` module do not write immediately to the underlying support. Write operations are guaranteed to be finalized either when the file is close or when an explicit synchronization is manually requested.
 
+## Constants
+
+This module defines the following constants:
+
+For device types.
+
+* `SD` = 0; SDCard device.
+* `INTERNAL` = 1; Internal flash memory.
+
+For filesystem types.
+
+* `FATFS` = 0; FAT32 filesystem.
+* `SPIFFS` = 1; SPIFFS filesystem.
+* `LITTLEFS` = 2; LITTLEFS filesystem.
+
+## Exceptions
+
+All the following exceptions are derived from IOError exception.
+
+### exception `FSFileAlreadyExistsError`
+The file already exists on the filesystem.
+
+### exception `FSNoSuchMountpointError`
+The requested mountpoint does not exist.
+
+### exception `FSCantMountError`
+The filesystem on the specified device cannot be mounted.
+
+### exception `FSNoMoreMountpointsError`
+No free mount points available on the system. The zOS can mount at most 4 mount points.
+
+### exception `FSFileDoNotExistsError`
+The requested file does not exist on the filesystem.
+
+### exception `FSDirDoNotExistsError`
+The requested directory does not exist on the filesystem.
+
+### exception `FSCantOpenError`
+The file or directory cannot be opened.
+
 ## FS Functions
 
 The `fs` module provides many functions for mounting and managing a filesystem. It also provide classes for streamlining operation on files.
 
 ### function `mount`
 ```python
-mount(prefix, what=INTERNAL, spiclk=2000000)
+mount(prefix, what=INTERNAL, spiclk=2000000, format_fs=0, format_check="NO")
 ```
 
 Mounts a storage device.
@@ -33,16 +73,15 @@ Valid values:
 
 * `spiclk`: The clock in Hz for the SPI bus where the MicroSD is attached to.
 
+* `format_fs`: format the fs if the mount fails if set to 1. Requires `format_check` to be set to `"YES"`. Only active on `SD`.
+
+* `format_check`: additional check to avoid unwanted format of the fs. Set to `"YES"` to pass the check.
+
 Can raise:
 
-* `FSNoSuchMountpointError` 
+* `FSNoSuchMountpointError`
 * `FSCantMountError`
 * `FSNoMoreMountpointsError`
-* `FSFileAlreadyExistsError`
-* `FSFileDoesNotExistError`
-
-All of the above have `IOError` as parent.
-
 
 ### function `unmount`
 ```python
@@ -52,6 +91,22 @@ unmount(prefix)
 Unmount a storage device.
 
 * `prefix`: The mountpoint to unmount.
+
+### function `info`
+```python
+info(path)
+```
+
+The function returns a tuple with filesystem information.
+
+* `path`: is any path on the filesystem. The function finds the correct mountpoint and returns the related information.
+
+The returned tuple is composed by the following elements:
+
+0. `Integer`: the filesystem type. Can be one of *FATFS*, *SPIFFS*, *LITTLEFS*.
+1. `Integer`: the total bytes of the filesystem.
+2. `Integer`: the used bytes of the filesystem.
+3. `Integer`: the free bytes of the filesystem.
 
 ### function `path`
 ```python
