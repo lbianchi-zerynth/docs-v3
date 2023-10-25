@@ -30,7 +30,7 @@ and then issuing the command `sudo udevadm control -R` in order to reload the ru
 
 Some other linux distributions require the user to belong to a specific group. Check your linux distro information for the correct values.
 
-## The VSCode extension goes black or flickers!
+## The VSCode extension goes black or flickers?
 
 It may be needed to [disable GPU acceleration](https://code.visualstudio.com/updates/v1_40#_disable-gpu-acceleration)
 

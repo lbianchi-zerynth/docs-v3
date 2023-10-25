@@ -47,4 +47,4 @@ For more information, Check the [device manager documentation](libs/zerynth/zdm/
 
 ### FAQ
 
-Your device is not recognized? something is out of place? [Refer to the FAQ section for more details.](faq/hardware/)
+Your device is not recognized? Is something out of place? [Refer to the FAQ section for more details.](faq/hardware/)

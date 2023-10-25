@@ -47,5 +47,5 @@ Yes with caveats. Zerynth version 2 uses the `ztc` and `zdm` command line tools.
 
 The most common reasons for failure are bad internet connections and low disk space. The installer retries downloading all the required components multiple times before giving up.
 
-If the failure is persistent, please ask for support in our [community forum](https://community.zerynth.com).
+If the failure is persistent, please ask for support in our [helpdesk](https://www.zerynth.com/helpdesk).
 

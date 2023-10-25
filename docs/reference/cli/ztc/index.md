@@ -216,8 +216,9 @@ Options:
 - `--raw`        Return raw information on USB devices
 - `--help`       Show this message and exit.
 
-!!! note
-  In Linux device information is obtained by calling into libudev functions. In Windows, the WMI interface is used. In Mac calls the list of serial ports is obtained first and then associated to USB details.
+!!! note 
+
+    In Linux device information is obtained by calling into libudev functions. In Windows, the WMI interface is used. In Mac calls the list of serial ports is obtained first and then associated to USB details.
 
 
 An example of device discovery. Notice the automatic recognition of the 4ZeroBox.
