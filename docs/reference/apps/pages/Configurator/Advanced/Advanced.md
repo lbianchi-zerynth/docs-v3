@@ -42,11 +42,11 @@ By clicking the `Load` button, you'll be able to choose a JSON file from your co
 
 ```json
 {
-	"type": "graph",
-	"nodes": [...],
-	"output": [...],
-	"events": [...],
-	"app": [...]
+ "type": "graph",
+ "nodes": [...],
+ "output": [...],
+ "events": [...],
+ "app": [...]
 }
 ```
 
@@ -71,41 +71,51 @@ After clicking the `Deploy` button, you can proceed with the configuration by se
 
 There are four types of Nodes Available:
 
-* **Sensors**:
-	* AnalogSensor
-	* CurrentSensor
-	* PowerSensor
-	* VoltageSensor
-	* ResistiveSensor
-	* LevelSensor
-	* JobBarCode
-* **Green-field protocols**:
-	* Modbus
-	* OPCUA
-	* Snap7
-* **Nodes**:
-	* Aggregator
-	* LoThreshold
-	* HiThreshold
-	* Status
-	* MultiStatus
-	* Chronometer
-	* MultiChronometer
-	* Pulse
-	* Counter
-	* Integrator
-	* MultiIntegrator
-	* IntegratorIdx
-* **Logical nodes**:
-	* BinPredicate
-	* BinOperator
-	* UnaryPredicate
-	* AndPredicates
-	* OrPredicates
-* **Output nodes**:
-	* CustomOutputNode
-	* ProductionInsightsApp
-	* MachineMonitoringApp
+**Sensors**:
+
+* AnalogSensor
+* CurrentSensor
+* PowerSensor
+* VoltageSensor
+* ResistiveSensor
+* LevelSensor
+* JobBarCode
+
+**Green-field protocols**:
+
+* Modbus
+* OPCUA
+* Snap7
+
+**Computational Nodes**:
+
+* Aggregator
+* LoThreshold
+* HiThreshold
+* Status
+* MultiStatus
+* Chronometer
+* MultiChronometer
+* Pulse
+* Counter
+* DeltaCounter
+* Integrator
+* MultiIntegrator
+* IntegratorIdx
+
+**Logical nodes**:
+
+* BinPredicate
+* BinOperator
+* UnaryPredicate
+* AndPredicates
+* OrPredicates
+
+**Output nodes**:
+
+* CustomOutputNode
+* ProductionInsightsApp
+* MachineMonitoringApp
 
 ### Connecting Nodes
 
@@ -145,33 +155,33 @@ The device node doesn't possess editable settings except for its name, which can
 
 * **Name**: The name of the node. Name must be unique in the graph;
 * **Chtype**: represents the sensor input’s type. The field’s value can be:
-	* Voltage
-	* Current
-	* Resistive
-	* Current_AC
+  * Voltage
+  * Current
+  * Resistive
+  * Current_AC
 * **SPS**: samples per second. Integer. Valid range depends on the actual ADC on the board (e.g.: 128, 250, …, 3300). The firmware takes care of out-of-range values. It is the sample rate of the ADC;
 * **PGA**: Programmable Gain Amplifier. Integer. It is designed to increase the dynamic range by amplifying low-amplitude signals before they are fed to the ADC. Valid range depends on the actual ADC on the board (e.g.: 1, 2, …);
 * **Samples**: The number of digital samples taken from the ADC when the read operation is performed;
 * **Conversion**: represents the analog to digital conversion of the sensor. The field’s value can be:
-	* No conversion
-	* Linear conversion
-	* Table conversion
-	* Power conversion
-	* Current conversion
+  * No conversion
+  * Linear conversion
+  * Table conversion
+  * Power conversion
+  * Current conversion
 * **Params**: List of the conversion’s parameters. This field is not visible if conversion=NoConversion;
 * **Channel**: represent the input terminal number for the clamp connection;
 * **Exp (Only PowerSensor)**: The expansion you want to use, the value can be:
-	* None
-	* AIN1
-	* IO1
+  * None
+  * AIN1
+  * IO1
 
 #### LevelSensor
 
 * **Name**: The name of the node. Name must be unique in the graph;
 * **Pull**: The pull-up or pull-down resistor to be set on the input. String. Valid values are:
-	* None
-	* Up
-	* Down
+  * None
+  * Up
+  * Down
 * **Debounce**: The debounce time in msec. Integer;
 * **Inverted**: The active state of the signal. Boolean. True = active on 0, False = active on 1;
 * **Channel**: represent the input terminal number for the clamp connection;
@@ -184,10 +194,10 @@ The device node doesn't possess editable settings except for its name, which can
 
 * **Name**: The name of the node. Name must be unique in the graph;
 * **Connection Type**: You can choose between:
-	* TCP
-	* Serial
+  * TCP
+  * Serial
 
-	Both options will display the configuration settings for the selected connection.
+ Both options will display the configuration settings for the selected connection.
 
 * **BaudRate** (connection = serial): The baudrate of the serial connection depending on the slave device configuration;
 * **Serial Parity** (connection = serial): The parity of the serial connection. It can be none, even or odd depending on the slave device configuration;
@@ -196,8 +206,8 @@ The device node doesn't possess editable settings except for its name, which can
 * **IP Address** (connection = TCP): The IP address of the slave device;
 * **Port** (connection = TCP): The port of the slave device;
 * **Endianess**: The endianness describes the byte importance order. It can be:
-	* Little
-	* Big
+  * Little
+  * Big
 
 This node needs a configuration file for its registers, you can create the file directly in the settings node by pressing the `Create` button.
 
@@ -214,9 +224,9 @@ You can edit the register settings by clicking the pencil button on the upper ri
 Each register has its own settings that can change with the register mode:
 
 * **Mode**: a register can have three modes:
-	* Basic
-	* Splitted
-	* Composed
+  * Basic
+  * Splitted
+  * Composed
 
 A register in Basic Mode has the following settings:
 
@@ -224,20 +234,20 @@ A register in Basic Mode has the following settings:
 * **Register Length**: The register length in bytes;
 * **Mult Factor**: This field is used to multiply the register output by a constant;
 * **Register Type**: This field’s value can be:
-	* Holding
-	* Coil
-	* Input
-	* Discrete
+  * Holding
+  * Coil
+  * Input
+  * Discrete
 * **Value Type**: This field’s value can be:
-	* BOOL
-	* INT16
-	* UINT16
-	* INT32
-	* UINT32
-	* INT64
-	* UINT64
-	* FLOAT32
-	* STRING
+  * BOOL
+  * INT16
+  * UINT16
+  * INT32
+  * UINT32
+  * INT64
+  * UINT64
+  * FLOAT32
+  * STRING
 
 If the register is in Splitted Mode, it has two more fields:
 
@@ -248,15 +258,15 @@ A register in Composed Mode has the following settings:
 
 * **Name**: The name of the register. Name must be unique;
 * **Value Type**: [...] This field's value can be:
-	* BOOL
-	* INT16
-	* UINT16
-	* INT32
-	* UINT32
-	* INT64
-	* UINT64
-	* FLOAT32
-	* STRING
+  * BOOL
+  * INT16
+  * UINT16
+  * INT32
+  * UINT32
+  * INT64
+  * UINT64
+  * FLOAT32
+  * STRING
 * **Register List**: contains the list of the sub-register composing the register;
 
 #### OPCUA Node
@@ -290,8 +300,8 @@ The Snap7 nodes have the following settings:
 * **IP address**: The IP address for the TCP connection;
 * **Port**: The port for the TCP connection;
 * **Endianness**: The endianness describes the byte importance order. It can be:
-	* Little
-	* Big
+  * Little
+  * Big
 
 The Snap7 nodes require a configuration file for its registers. You can choose to upload an existing file or create a new one. The uploaded file can be a CSV or a JSON file.
 
@@ -301,25 +311,25 @@ For each register you can set the following settings:
 
 * **Name**: The name of the register. Name must be unique;
 * **Type**: The register type. DB (data block) is the most used, the value can be:
-	* DB
-	* PE
-	* PA
-	* MK
-	* CT
-	* TM
+  * DB
+  * PE
+  * PA
+  * MK
+  * CT
+  * TM
 * **DBNum**: Represents the data block number;
 * **Start**: Represents the starting address of the register;
 * **Size**: Represents the size of the register in bytes;
 * **Data Type**:
-	* BOOL
-	* INT16
-	* UINT16
-	* INT32
-	* UINT32
-	* INT64
-	* UINT64
-	* FLOAT32
-	* STRING
+  * BOOL
+  * INT16
+  * UINT16
+  * INT32
+  * UINT32
+  * INT64
+  * UINT64
+  * FLOAT32
+  * STRING
 
 #### Aggregator
 
@@ -376,6 +386,10 @@ Counter Node has the following settings:
 
 * **Increment**: The value to be added to the counter every acq_period. Set it to 0 to increment the counter by the value of the input node.
 
+#### DeltaCounter
+
+ [...]
+
 #### Integrator
 
 [...]
@@ -415,6 +429,5 @@ The AndPredicates and OrPredicates nodes take as input a list of bools and retur
 [//]: # (TODO: Add images)
 
 [//]: # (Images)
-[configurator_image]: ../../img/Configurator/Configurator.png
 [graph_editor_image]: ../../img/Configurator/Advanced/GraphEditor.png
 [add_node_image]: ../../img/Configurator/Advanced/AddNode.png
