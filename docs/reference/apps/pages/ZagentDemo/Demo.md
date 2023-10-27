@@ -26,9 +26,6 @@ Now, configure the machine using the demo template:
 Download the demo package and return to the homepage
 ![download]
 
-Now you can open the simulator documentation and return to the homepage
-![finish]
-
 Open the Production Insights app and enjoy!
 ![select_prod_dash]
 
