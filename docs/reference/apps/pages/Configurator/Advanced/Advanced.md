@@ -70,6 +70,11 @@ The `Save` button is used to store your configuration. This button has two disti
 
 After clicking the `Deploy` button, you can proceed with the configuration by selecting the device to which you want to apply the configuration.
 
+### How to use Templates
+
+Based on the choice of the type of machine to configure, appropriate graph templates will be available. Specifically, for production machines, there are currently production graphs available for brownfield and greenfield machinery. Configuration for brownfield machinery is ready for use, while for greenfield machinery with the OPCUA node, it is necessary to set the IP and port within the node settings. Once this is done, you can proceed with the configuration.
+For service machines, there is a ready-to-use template available for brownfield machines.
+
 ## Edit Graph Settings
 
 ### Node Typology
@@ -482,10 +487,6 @@ The UnaryPredicate node allows for the negation of the input.
 ### AndPredicates and OrPredicates
 
 The AndPredicates and OrPredicates nodes take as input a list of bools and return the evaluation of the conjunction/disjunction between the input values.
-
-## Configuration Example
-
-[...]
 
 [//]: # (TODO: Add images)
 
