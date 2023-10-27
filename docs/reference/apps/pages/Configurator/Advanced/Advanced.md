@@ -491,5 +491,5 @@ The AndPredicates and OrPredicates nodes take as input a list of bools and retur
 [//]: # (TODO: Add images)
 
 [//]: # (Images)
-[graph_editor_image]: ../../img/Configurator/Advanced/GraphEditor.png
-[add_node_image]: ../../img/Configurator/Advanced/AddNode.png
+[graph_editor_image]: ../../../img/Configurator/Advanced/GraphEditor.png
+[add_node_image]: ../../../img/Configurator/Advanced/AddNode.png
