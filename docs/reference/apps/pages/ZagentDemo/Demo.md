@@ -18,7 +18,7 @@ Now, configure the machine using the demo template:
 1. Select Template
 2. Select Production Insights with OPCUA
 3. Click on the OPCUA node
-4. Set the ip (the IP adderss of your PC) and the port (default is `49580`) of the OPCUA simulator (see the [greenfield simulator](#start-the-greenfield-simulator) section) and then scroll down to the node settings to save
+4. Set the ip (the IP adderss of your PC) and the port (default is `49580`) of the OPCUA simulator (see the [greenfield simulator](#start-the-greenfield-simulator) section) and then scroll down the node settings to save
 5. Deploy the machine
 
 ![configure_node]
