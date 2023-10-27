@@ -2,223 +2,353 @@
 
 The basic configuration is a wizard which allows you to configure a machine in a guided mode, taking you every step of the way to have a device ready to go.
 
-Firstly, you will be asked to choose your machine type. Refer to the Knowledge Base for more information.
+Firstly, you will be asked to choose your machine type. Refer to the [Knowledge Base](../../KnowledgeBase/KnowledgeBase.md) for more information.
+
+![machine_type_image]
 
 For each machine type, follow the steps described below.
 
 ## Auxiliary Machine
 
-1. Choose the name of the machine you're configuring;
+### Machine name
 
-2. Set the machines's power settings. This includes:
-    * **Power meter**
-        * Power meter connection (active or inactive)
-    * **Power supply settings**
-	      * Network voltage (in V)
-        * Power supply type (default three-phase)
-    * **Machine status**
-        * Working (in A) defines above which current the machine is considered to be working
-    * **Power meter settings** (only available if power meter connection is active)
-        * Connection type (default serial)
-    * **Serial settings** (only available if power meter connection is active)
-        * Address (default 1)
-        * Serial number (can be 1 or 2)
-        * Baudrate (default 19200)
-        * Mode (can be RS232 or RS485)
-        * Stop bit (can be 1, 1.5 or 2)
-        * Bit size (can be 5, 6, 7 or 8)
-        * Parity (can be None, Even or Odd)
-        * Flow control (can be Disabled, RTS, CTS or RTS/CTS)
+Choose the name of the machine you're configuring;
 
-3. Select the machine's alarms. For every new alarm you can define:
-    * **Alarm name**;
-    * **Alarm type**, which can be threshold or digital;
+![machine_name_image]
 
-    If the alarm is a threshold alarm, you can also define:
+### Power settings
 
-    * **Alarm threshold** (in W)
+Set the machines's power settings. This includes:
 
-    If the alarm is a digital alarm, you can also define:
+* **Power meter**
+    * Power meter connection (active or inactive)
+* **Power supply settings**
+    * Network voltage (in V)
+    * Power supply type (default three-phase)
+* **Machine status**
+    * Working (in A) defines above which current the machine is considered to be working
+* **Power meter settings** (only available if power meter connection is active)
+    * Connection type (default serial)
+* **Serial settings** (only available if power meter connection is active)
+    * Address (default 1)
+    * Serial number (can be 1 or 2)
+    * Baudrate (default 19200)
+    * Mode (can be RS232 or RS485)
+    * Stop bit (can be 1, 1.5 or 2)
+    * Bit size (can be 5, 6, 7 or 8)
+    * Parity (can be None, Even or Odd)
+    * Flow control (can be Disabled, RTS, CTS or RTS/CTS)
 
-    * **Alarm on value**, which can be 0 or 1
+![auxiliary_power_settings_image]
 
-4. Select the type of device you wish to connect to your machine. 4ZeroBox Lite is available, and 4ZeroBox v10 is coming soon.
+### Alarm settings
 
-5. Select the main network type of your device. WiFi and Ethernet are available. If Ethernet is selected, you can define:
-    * **IPv4 mode** (can DHCP or manual)
+Select the machine's alarms. For every new alarm you can define:
 
-    If IPv4 is manual, you will need to define:
+* **Alarm name**;
+* **Alarm type**, which can be threshold or digital;
 
-    * **IP address** (in IPv4 format)
-    * **Subnet mask** (in IPv4 format)
-    * **Gateway** (in IPv4 format)
-    * **DNS** (in IPv4 format)
-   
-    If WiFi is selected, you will also need to define:
+If the alarm is a threshold alarm, you can also define:
 
-    * **SSID**
-    * **Password** (only WPA2 security is available)
+* **Alarm threshold** (in W)
 
-6. If necessary, add backup networks. The device will try to connect to these networks (in order) if the networks before have failed to connect. Backup networks can be Ethernet or WiFi, and each 
-   one has the same settings as described above.
+If the alarm is a digital alarm, you can also define:
 
-7. When you're done, click on **Next**.
+* **Alarm on value**, which can be 0 or 1
 
-8. Connect your device to a USB port on your computer.
+![alarms_image]
 
-9. Select the USB port where your device is connected.
+![alarm_new_image]
 
-10. Click on **Connect** and wait for the device to be detected.
+![alarm_new_threshold_image]
 
-11. The configurator will start configuring the device. Wait for the process to finish.
+![alarm_new_digital_image]
 
-12. Done! Your device is ready to be connected to your machine.
-	 
+### Device type
+
+Select the type of device you wish to connect to your machine. 4ZeroBox Lite is available, and 4ZeroBox v10 is coming soon.
+
+![device_type_image]
+
+### Networking
+
+Select the main network type of your device. WiFi and Ethernet are available. If Ethernet is selected, you can define:
+
+* **IPv4 mode** (can DHCP or manual)
+
+If IPv4 is manual, you will need to define:
+
+* **IP address** (in IPv4 format)
+* **Subnet mask** (in IPv4 format)
+* **Gateway** (in IPv4 format)
+* **DNS** (in IPv4 format)
+
+If WiFi is selected, you will also need to define:
+
+* **SSID**
+* **Password** (only WPA2 security is available)
+
+![network_type_image]
+
+If necessary, add backup networks. The device will try to connect to these networks (in order) if the networks before have failed to connect. Backup networks can be Ethernet or WiFi, and each one
+has the same settings as described above.
+
+![network_config_image]
+
+When you're done, click on **Next**.
+
+### Device connection
+
+Connect your device to a USB port on your computer.
+
+![connect_usb_image]
+
+Select the USB port where your device is connected.
+
+![connect_usb_port_image]
+
+Click on **Connect** and wait for the device to be detected.
+
+The configurator will start configuring the device. Wait for the process to finish.
+
+Done! Your device is ready to be connected to your machine.
+
 
 ## Production Machine
 
-1. Choose the name of the machine you're configuring;
+### Machine name
 
-2. Set the machines's power settings. This includes:
-    * **Power supply settings**
-	      * Network voltage (in V)
-        * Power supply type (default three-phase)
-    * **Machine status**
-        * Working (in A) defines above which current the machine is considered to be working
-    * **Clamp settings**
-        * Clamp type (can be 5V or 0.33V)
-        * Clamp amperage (default 200)
+Choose the name of the machine you're configuring;
 
-3. Set the machine's piece counter. The pieces are calculated as pulses, so you will need to define:
-    * **Minimum pulse duration** (in ms)
-    * **Polarity** (can be active on 0 or 1)
+![machine_name_image]
 
-		If you want to monitor defective pieces as well, you will need to set the same parameters for the defective pieces counter.
+### Power settings
 
-4. Select the machine's alarms. For every new alarm you can define:
-    * **Alarm name**;
-    * **Alarm type**, which can be threshold or digital;
+Set the machines's power settings. This includes:
 
-	  If the alarm is a threshold alarm, you can also define:
-	
-    * **Alarm threshold** (in W)
-	
-	  If the alarm is a digital alarm, you can also define:
-	
-    * **Alarm on value**, which can be 0 or 1
+* **Power supply settings**
+    * Network voltage (in V)
+    * Power supply type (default three-phase)
+* **Machine status**
+    * Working (in A) defines above which current the machine is considered to be working
+* **Clamp settings**
+    * Clamp type (can be 5V or 0.33V)
+    * Clamp amperage (default 200)
 
-5. Set the machine's operations. You can choose to enable them or not. If enabled you will need to choose if the operations will be set only from the Zerynth Cloud or if they can be set via 
-   barcode as well.
+![production_power_settings_image]
 
-    If barcode operations are enabled, you will need to configure the following parameters:
+### Production monitoring settings
 
-    * **Serial settings**
-        * Serial number (can be 1 or 2)
-        * Baudrate (default 9600)
-        * Mode (can be RS232 or RS485)
-        * Stop bit (can be 1 or 2)
-        * Bit size (can be 5, 6, 7 or 8)
-        * Parity (can be None, Even or Odd)
-        * Flow control (can be Disabled, RTS, CTS or RTS/CTS)
+Set the machine's piece counter. The pieces are calculated as pulses, so you will need to define:
 
-6. Select the type of device you wish to connect to your machine. 4ZeroBox Lite is available, and 4ZeroBox v10 is coming soon.
+* **Minimum pulse duration** (in ms)
+* **Polarity** (can be active on 0 or 1)
 
-7. Select the main network type of your device. WiFi and Ethernet are available. If Ethernet is selected, you can define:
-    * **IPv4 mode** (can DHCP or manual)
+If you want to monitor defective pieces as well, you will need to set the same parameters for the defective pieces counter.
 
-    If IPv4 is manual, you will need to define:
+![production_monitoring_settings_image]
 
-    * **IP address** (in IPv4 format)
-    * **Subnet mask** (in IPv4 format)
-    * **Gateway** (in IPv4 format)
-    * **DNS** (in IPv4 format)
-	 
-    If WiFi is selected, you will also need to define:
+### Alarm settings
 
-    * **SSID**
-    * **Password** (only WPA2 security is available)
+Select the machine's alarms. For every new alarm you can define:
 
-8. If necessary, add backup networks. The device will try to connect to these networks (in order) if the networks before have failed to connect. Backup networks can be Ethernet or WiFi, and each 
-	 one has the same settings as described above.
+* **Alarm name**;
+* **Alarm type**, which can be threshold or digital;
 
-9. When you're done, click on **Next**.
+If the alarm is a threshold alarm, you can also define:
 
-10. Connect your device to a USB port on your computer.
+* **Alarm threshold** (in W)
 
-11. Select the USB port where your device is connected.
+If the alarm is a digital alarm, you can also define:
 
-12. Click on **Connect** and wait for the device to be detected.
+* **Alarm on value**, which can be 0 or 1
 
-13. The configurator will start configuring the device. Wait for the process to finish.
+![alarms_image]
 
-14. Done! Your device is ready to be connected to your machine.
+![alarm_new_image]
+
+![alarm_new_threshold_image]
+
+![alarm_new_digital_image]
+
+### Machine operations
+
+Set the machine's operations. You can choose to enable them or not. If enabled you will need to choose if the operations will be set only from the Zerynth Cloud or if they can be set via barcode as well.
+
+If barcode operations are enabled, you will need to configure the following parameters:
+
+* **Serial settings**
+    * Serial number (can be 1 or 2)
+    * Baudrate (default 9600)
+    * Mode (can be RS232 or RS485)
+    * Stop bit (can be 1 or 2)
+    * Bit size (can be 5, 6, 7 or 8)
+    * Parity (can be None, Even or Odd)
+    * Flow control (can be Disabled, RTS, CTS or RTS/CTS)
+
+![production_machine_operations_image]
+
+### Device type
+
+Select the type of device you wish to connect to your machine. 4ZeroBox Lite is available, and 4ZeroBox v10 is coming soon.
+
+![device_type_image]
+
+### Networking
+
+Select the main network type of your device. WiFi and Ethernet are available. If Ethernet is selected, you can define:
+
+* **IPv4 mode** (can DHCP or manual)
+
+If IPv4 is manual, you will need to define:
+
+* **IP address** (in IPv4 format)
+* **Subnet mask** (in IPv4 format)
+* **Gateway** (in IPv4 format)
+* **DNS** (in IPv4 format)
+
+If WiFi is selected, you will also need to define:
+
+* **SSID**
+* **Password** (only WPA2 security is available)
+
+![network_type_image]
+
+If necessary, add backup networks. The device will try to connect to these networks (in order) if the networks before have failed to connect. Backup networks can be Ethernet or WiFi, and each one has the same settings as described above.
+
+![network_config_image]
+
+When you're done, click on **Next**.
+
+### Device connection
+
+Connect your device to a USB port on your computer.
+
+Select the USB port where your device is connected.
+
+Click on **Connect** and wait for the device to be detected.
+
+The configurator will start configuring the device. Wait for the process to finish.
+
+Done! Your device is ready to be connected to your machine.
 
 ## Electrical Panel
 
-1. Choose the name of the machine you're configuring;
+### Machine name
 
-2. Set the machines's power settings. This includes:
-    * **Power meter**
-        * Power meter connection (active or inactive)
-    * **Network info**
-        * Network voltage (in V)
-    * **Input Lines** (only available if power meter connection is inactive)
-        * Clamp type (can be 5V or 0.33V)
-        * Clamp amperage
-    * **Power meter settings** (only available if power meter connection is active)
-        * Connection type (default serial)
-    * **Serial settings** (only available if power meter connection is active)
-        * Address (default 1)
-        * Serial number (can be 1 or 2)
-        * Baudrate (default 19200)
-        * Mode (can be RS232 or RS485)
-        * Stop bit (can be 1, 1.5 or 2)
-        * Bit size (can be 5, 6, 7 or 8)
-        * Parity (can be None, Even or Odd)
-        * Flow control (can be Disabled, RTS, CTS or RTS/CTS)
-    * **Output lines**
-        * Clamp type (can be 5V or 0.33V)
-        * Clamp amperage
-        * Output lines (from 1 to 5)
-        * Output line name (one for each output line)
-    * **Line threshold**
-        * Max input value (in A)
-        * Max output value (in A)
-    * **Alert input**
-        * Max value (in A)
+Choose the name of the machine you're configuring
 
-3. Select the type of device you wish to connect to your machine. 4ZeroBox Lite is available, and 4ZeroBox v10 is coming soon.
-4. Select the main network type of your device. WiFi and Ethernet are available. If Ethernet is selected, you can define:
-    * **IPv4 mode** (can DHCP or manual)
+![machine_name_image]
 
-    If IPv4 is manual, you will need to define:
+### Power settings
 
-    * **IP address** (in IPv4 format)
-    * **Subnet mask** (in IPv4 format)
-    * **Gateway** (in IPv4 format)
-    * **DNS** (in IPv4 format)
-	 
-    If WiFi is selected, you will also need to define:
+Set the machines's power settings. This includes:
 
-    * **SSID**
-    * **Password** (only WPA2 security is available)
+* **Power meter**
+    * Power meter connection (active or inactive)
+* **Network info**
+    * Network voltage (in V)
+* **Input Lines** (only available if power meter connection is inactive)
+    * Clamp type (can be 5V or 0.33V)
+    * Clamp amperage
+* **Power meter settings** (only available if power meter connection is active)
+    * Connection type (default serial)
+* **Serial settings** (only available if power meter connection is active)
+    * Address (default 1)
+    * Serial number (can be 1 or 2)
+    * Baudrate (default 19200)
+    * Mode (can be RS232 or RS485)
+    * Stop bit (can be 1, 1.5 or 2)
+    * Bit size (can be 5, 6, 7 or 8)
+    * Parity (can be None, Even or Odd)
+    * Flow control (can be Disabled, RTS, CTS or RTS/CTS)
+* **Output lines**
+    * Clamp type (can be 5V or 0.33V)
+    * Clamp amperage
+    * Output lines (from 1 to 5)
+    * Output line name (one for each output line)
+* **Line threshold**
+    * Max input value (in A)
+    * Max output value (in A)
+* **Alert input**
+    * Max value (in A)
 
-5. If necessary, add backup networks. The device will try to connect to these networks (in order) if the networks before have failed to connect. Backup networks can be Ethernet or WiFi, and each 
-	 one has the same settings as described above.
+![cabinet_power_settings_image]
 
-6. When you're done, click on **Next**.
+### Device type
 
-7. Connect your device to a USB port on your computer.
+Select the type of device you wish to connect to your machine. 4ZeroBox Lite is available, and 4ZeroBox v10 is coming soon.
 
-8. Select the USB port where your device is connected.
+![device_type_image]
 
-9. Click on **Connect** and wait for the device to be detected.
+### Networking
 
-10. The configurator will start configuring the device. Wait for the process to finish.
+Select the main network type of your device. WiFi and Ethernet are available. If Ethernet is selected, you can define:
 
-11. Done! Your device is ready to be connected to your machine.
+* **IPv4 mode** (can DHCP or manual)
+
+If IPv4 is manual, you will need to define:
+
+* **IP address** (in IPv4 format)
+* **Subnet mask** (in IPv4 format)
+* **Gateway** (in IPv4 format)
+* **DNS** (in IPv4 format)
+
+If WiFi is selected, you will also need to define:
+
+* **SSID**
+* **Password** (only WPA2 security is available)
+
+![network_type_image]
+
+If necessary, add backup networks. The device will try to connect to these networks (in order) if the networks before have failed to connect. Backup networks can be Ethernet or WiFi, and each one has the same settings as described above.
+
+![network_config_image]
+
+When you're done, click on **Next**.
+
+### Device connection
+
+Connect your device to a USB port on your computer.
+
+![connect_usb_image]
+
+Select the USB port where your device is connected.
+
+![connect_usb_port_image]
+
+Click on **Connect** and wait for the device to be detected.
+
+The configurator will start configuring the device. Wait for the process to finish.
+
+Done! Your device is ready to be connected to your machine.
 
 
 
-[//]: # (TODO: Add images)
+[//]: # (Common images)
 
+[alarm_new_image]: ../../../img/Configurator/Basic/AlarmNew.png
+[alarm_new_digital_image]: ../../../img/Configurator/Basic/AlarmNewDigital.png
+[alarm_new_threshold_image]: ../../../img/Configurator/Basic/AlarmNewThreshold.png
+[alarms_image]: ../../../img/Configurator/Basic/Alarms.png
+[connect_usb_image]: ../../../img/Configurator/Basic/ConnectUSB.png
+[connect_usb_port_image]: ../../../img/Configurator/Basic/ConnectUSBPort.png
+[device_type_image]: ../../../img/Configurator/Basic/DeviceType.png
+[machine_name_image]: ../../../img/Configurator/Basic/MachineName.png
+[machine_type_image]: ../../../img/Configurator/Basic/MachineType.png
+[network_config_image]: ../../../img/Configurator/Basic/NetworkConfig.png
+[network_type_image]: ../../../img/Configurator/Basic/NetworkType.png
+
+[//]: # (Auxiliary images)
+
+[auxiliary_power_settings_image]: ../../../img/Configurator/Basic/Auxiliary/PowerSettings.png
+
+[//]: # (Production images)
+
+[production_machine_operations_image]: ../../../img/Configurator/Basic/Production/MachineOperations.png
+[production_power_settings_image]: ../../../img/Configurator/Basic/Production/PowerSettings.png
+[production_monitoring_settings_image]: ../../../img/Configurator/Basic/Production/MonitoringSettings.png
+
+[//]: # (Cabinet images)
+
+[cabinet_power_settings_image]: ../../../img/Configurator/Basic/Cabinet/PowerSettings.png
