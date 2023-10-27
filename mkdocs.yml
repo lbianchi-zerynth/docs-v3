@@ -70,6 +70,8 @@ nav:
     - Integration with 3rd party services: tutorials/zCloud/azure_integration.md
     - Track KPIs and Create Dashboards in Zerynth Cloud: tutorials/zCloud/dashboard.md
   - tutorials/cli.md
+  - Zagent Demo: reference/apps/pages/ZagentDemo/Demo.md
+    
 - Technical reference:
   - {Introduction: reference/index.md}
   - SDK:
@@ -182,7 +184,7 @@ nav:
     - reference/apps/pages/Maintenance/Maintenance.md
     - reference/apps/pages/EngineRules/EngineRules.md
     - reference/apps/pages/ProductionInsights/ProductionInsights.md
-    - reference/apps/pages/ProductionTracking/ProductionTracking.md
+#    - reference/apps/pages/ProductionTracking/ProductionTracking.md
     - reference/apps/pages/MachineControl/MachineControl.md
     - reference/apps/pages/CustomDashboards/CustomDashboards.md
     - reference/apps/pages/DeviceManagement/DeviceManagement.md
