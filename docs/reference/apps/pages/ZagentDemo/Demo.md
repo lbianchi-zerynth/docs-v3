@@ -26,7 +26,7 @@ Now, configure the machine using the demo template:
 Download the demo package and return to the homepage
 ![download]
 
-Open the Production Insights app and enjoy!
+Open the Production Insights app and let's move to the next step 
 ![select_prod_dash]
 
 ## Start the greenfield simulator
