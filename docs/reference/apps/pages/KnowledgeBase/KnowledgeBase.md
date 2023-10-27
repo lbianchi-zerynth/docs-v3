@@ -6,7 +6,7 @@ A Workspace is a very important entity of the Zerynth Cloud. It can be defined a
 
 Each Workspace is independent from the other, even in the same account. This makes it easier to separate different plants or sites of the same owner.
 
-## Fleets
+[//]: # (## Fleets)
 
 ## Filtering options
 
@@ -59,11 +59,11 @@ Organic unit inside of which part or all of the cycle of transformation from INP
 Organic unit, part of the productive structure, inside of which, a service treatment cycle happens (i.e. water service, electricity, waste disposal, purification…)
 
 
-### Electrical panels
+[//]: # (### Electrical panels)
 
-xxxxxxxxxxxxxxxxxxxxx
+[//]: # (xxxxxxxxxxxxxxxxxxxxx)
 
-## Nodes
+[//]: # (## Nodes)
 
 ## Currencies (ISO 4217)
 
