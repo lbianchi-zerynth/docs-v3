@@ -47,11 +47,11 @@ By clicking the `Load` button, you'll be able to choose a JSON file from your co
 
 ```json
 {
- "type": "graph",
- "nodes": [...],
- "output": [...],
- "events": [...],
- "app": [...]
+ "type": 	"graph",
+ "nodes": 	[],
+ "output": 	[],
+ "events":	[],
+ "app": 	[]
 }
 ```
 
@@ -468,8 +468,8 @@ and the output is the final status of the inner array.
 
 ### IntegratorIdx
 
-An integrator idx has a single input, a single index selector, an inner array of n places and n outputs. Every value has a `tot` flag, which indicates whether the aggregate or the average of the 
-values is displayed.
+An integrator idx has a single input, a single index selector, an inner array of n places and n outputs. Every value has a `tot` flag, which indicates whether the aggregate (1) or the average (0) of 
+the values is displayed.
 
 ### BinPredicate
 
