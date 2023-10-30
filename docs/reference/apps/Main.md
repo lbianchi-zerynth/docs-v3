@@ -1,7 +1,9 @@
 # Zerynth Cloud Documentation
 
 ## Introduction
-The _Zerynth Industrial IoT & AI Platform_ is an industrial IoT platform which enables monitoring and management of any industrial asset in a very easy and intuitive manner.
+The **Zerynth Industrial IoT & AI Platform** is a full stack hardware-software IoT and AI platform to connect any industrial product or machinery and get visibility on the entire factory in a unified way.
+
+**Zerynth Apps** simplify digital transformation for 4.0 factories by streamlining production processes with pre-configured applications, allowing manufacturing companies to operate more efficiently and effectively.
 
 Thanks to dashboards and tools organised by Application (App), it is possible to leverage Zerynth’s technology to:
 
@@ -12,16 +14,21 @@ Thanks to dashboards and tools organised by Application (App), it is possible to
 
 According to the specific package purchased, one or more Applications are enabled in the _Zerynth Industrial IoT & AI Platform_ in order to allow end users to monitor real-time  operating states and health of industrial assets, maximise the efficiency and the performance of manufacturing processes, analyse and optmize energy consumption and related costs, minimise downtime, and manage the maintenance status.
 
-The following Applications are available:
+The available Applications organised in section and they are organized in the aside menu as shown below:
 
 * **Machine Monitoring**
-* **Machine Maintenance**
-* **Production Insights**
-* **Production Tracking**
-* **Machine Control**
-* **Custom App**
+    * Machine
+    * Consumption
+    * Maintenance
+* **Tools**
+    * Device Management
+    * Data Management
+    * Custom Dashboards
+    * Reports
+    * Rules
+    * Settings
 
-In addition, administration tools enabling the export of raw data, the integration with 3rd party systems, the monitoring of SIM cards traffic, the management of Zerynth’s devices from remote is also provided as integral part of any package sold.
+In addition, tools enabling the export of raw data, the integration with 3rd party systems, the monitoring of SIM cards traffic, the management of Zerynth’s devices from remote is also provided as an integral part of any package sold.
 
 This new version of [_Zerynth Industrial IoT & AI Platform_][zerynth_cloud] provides ready-to-use solutions for extracting relevant information from one's machinery using Apps.
 
@@ -29,16 +36,17 @@ Each App allows for monitoring a specific aspect of the machinery, and for each 
 
 It is also possible to go beyond preconfigured Apps by getting a tailor-made solution that perfectly fits your unique needs, creating customised dashboards using Grafana tools.
 
-Let's now take a closer look at the contents of the Zerynth Platform.
+Let's now take a closer look at the contents of the Zerynth Platform and, more in detail, the Machine Monitoring App.
 
 ## Prerequisites
-To use the Zerynth Platform, you must be in possess of a [Zerynth Industry 4.0 Solution][zerynth_solutions]. 
+
+In order to utilize the Zerynth Platform, it is necessary to have ownership of a [Zerynth Industry 4.0 Solution][zerynth_solutions]. 
 
 If you are not a Zerynth customer yet, don't hesitate and [get in contact with our Sales team][zerynth_contact] to receive an offer fit for your needs.
 
 Additional requirements are:
 
-* A stable internet connection (WiFi or 3G or better mobile connection);
+* A stable internet connection (WiFi, 3G or better mobile connection);
 * Any up-to-date browser (Chrome, Edge, Opera, Safari).
 
 ## Sign in and Sign up
@@ -72,7 +80,7 @@ The structure of the portal is as follows:
 
 * At the top of the pages there is an aggregate section for the selected workspace. Underneath this section, there is a detailed view for each machine or device.
 * On the left of the page, there is a menu with the list of all the available pages and applications. 
-* In the bottom-right corner, there is the account menu, which allows to change your account's settings, change workspace and other operations.
+* In the bottom-left corner, there is the account menu, which allows to change your account's settings, change workspace and other operations.
 
 [//]: #                         (Connections and external links)
 [zerynth_cloud]:                https://cloud.zerynth.com

@@ -1,15 +1,15 @@
-# Machine Monitoring App
+# Consumption App
 
-???+ question "How to obtain the Machine Monitoring App?"
-    The Machine Monitoring Application is included in the base package of the _Zerynth Industrial IoT & AI Platform_.
+???+ question "How to obtain the Consumption App?"
+    The Consumption Application is included in the base package of the _Zerynth Industrial IoT & AI Platform_.
 
-The Machine Monitoring Application enables:
+The Consumption Application enables:
 
 * States and alarm monitoring of machines;
 * Consumption analysis and monitoring of machines and areas/buildings;
 * Management and planning of machines maintenance.
 
-The Machine Monitoring App gives an overview of the machines and information about their energy consumption.
+The Consumption App gives an overview of the machines and information about their energy consumption.
 
 This App is organised into two sections based on the machinery type:
 
@@ -103,9 +103,7 @@ The main page shows a table with the list of all the electrical panels in the Wo
 
 By clicking on a panel name, you will be redirected to a more detailed view.
 
-![single_panel_image1]
-
-![single_panel_image2]
+![single_panel_image]
 
 At the top of the page, two rows of panels display overview information about input and output lines of the panel.
 
@@ -166,6 +164,5 @@ Then the timeline showing the status distribution during the selected time range
 [overview_machines_image]:  ../../img/MachineMonitoring/Machines/Machines.png
 [single_machine_image]:     ../../img/MachineMonitoring/Machines/SingleMachine/SingleMachine.png
 [overview_panels_image]:    ../../img/MachineMonitoring/ElectricalPanels/Panels.png
-[single_panel_image1]:      ../../img/MachineMonitoring/ElectricalPanels/SinglePanel/SinglePanel1.png
-[single_panel_image2]:      ../../img/MachineMonitoring/ElectricalPanels/SinglePanel/SinglePanel2.png
+[single_panel_image]:       ../../img/MachineMonitoring/ElectricalPanels/SinglePanel/SinglePanel.png
 [single_line_image]:        ../../img/MachineMonitoring/ElectricalPanels/SinglePanel/SingleLine/SingleLine.png
