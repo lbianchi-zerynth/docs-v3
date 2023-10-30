@@ -459,12 +459,12 @@ This node takes as input the output of a counter and computes the delta between 
 ### Integrator
 
 An integrator is very similar to an accumulator. It has a single input, n labels and n outputs. Based on the selected label or labels, the input value is added to the label value of the inner array, 
-and the output is the status of the inner array.
+and the output is the final status of the inner array.
 
 ### MultiIntegrator
 
 A multi integrator has a similar behavior to the integrator, but it has n inputs and n outputs. Based on the selected label or labels, the input values are added to the label value of the inner array,
-and the output is the status of the inner array.
+and the output is the final status of the inner array.
 
 ### IntegratorIdx
 
