@@ -192,7 +192,7 @@ nav:
     - reference/apps/pages/Payloads/Payloads.md
     - reference/apps/pages/Settings/Settings.md
     - reference/apps/pages/Account/Account.md
-    - reference/apps/pages/KnowledgeBase/KnowledgeBase.md
+  - {Knowledge Base: reference/apps/pages/KnowledgeBase/KnowledgeBase.md}
   - Configurator:
     - {Introduction: reference/apps/pages/Configurator/Configurator.md}
     - reference/apps/pages/Configurator/Basic/Basic.md

@@ -79,7 +79,7 @@ For service machines, there is a ready-to-use template available for brownfield 
 
 ### Node Typology
 
-There are four types of Nodes Available:
+There are five types of Nodes Available:
 
 **Sensors**:
 
@@ -295,15 +295,15 @@ A register in Basic Mode has the following settings:
 
 If the register is in Splitted Mode, it has two more fields:
 
-**Mask**: [...];
+**Mask**: a mask applied to the register value in order to filter the register (useful when the register value contains more than one variable);
 
-**RIght Shift**: [...];
+**RIght Shift**: indicates by how much the result of the mask has to be shifted to be aligned on the right;
 
 A register in Composed Mode has the following settings:
 
 **Name**: The name of the register. Name must be unique;
 
-**Value Type**: [...] This field's value can be:
+**Value Type**: The type of register that you are reading. This field's value can be:
 
 * BOOL
 * INT16
@@ -315,13 +315,13 @@ A register in Composed Mode has the following settings:
 * FLOAT32
 * STRING
 
-**Register List**: contains the list of the sub-register composing the register;
+**Register List**: contains the list of the sub-register composing the register. Each register will then take as configuration the same fields as a splitted mode register;
 
 ### OPCUA Node
 
 Required parameter:
 
-**Full URL**: The full URL of the OPCUA server (e.g. opc.tcp://\<ip-or-hostname>:\<port>/path/)
+**Full URL**: The full URL of the OPCUA server (e.g. opc.tcp://<ip-or-hostname>:<port>/path/)
 
 Optional parameters:
 
@@ -458,15 +458,18 @@ This node takes as input the output of a counter and computes the delta between 
 
 ### Integrator
 
-[...]
+An integrator is very similar to an accumulator. It has a single input, n labels and n outputs. Based on the selected label or labels, the input value is added to the label value of the inner array, 
+and the output is the status of the inner array.
 
 ### MultiIntegrator
 
-[...]
+A multi integrator has a similar behavior to the integrator, but it has n inputs and n outputs. Based on the selected label or labels, the input values are added to the label value of the inner array,
+and the output is the status of the inner array.
 
 ### IntegratorIdx
 
-[...]
+An integrator idx has a single input, a single index selector, an inner array of n places and n outputs. Every value has a `tot` flag, which indicates whether the aggregate or the average of the 
+values is displayed.
 
 ### BinPredicate
 

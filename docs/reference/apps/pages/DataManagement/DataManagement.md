@@ -1,4 +1,4 @@
-# Data Management
+# Data Management Page
 
 ![data_management_image]
 
