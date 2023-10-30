@@ -458,7 +458,7 @@ This node takes as input the output of a counter and computes the delta between 
 
 ### Integrator
 
-An integrator is very similar to an accumulator. It has a single input, n labels and n outputs. Based on the selected label or labels, the input value is added to the label value of the inner array, 
+An integrator is very similar to an accumulator. It has a single input, n labels and n outputs. Based on the selected label, the input value is added to the label value of the inner array, 
 and the output is the final status of the inner array.
 
 ### MultiIntegrator
@@ -468,7 +468,7 @@ and the output is the final status of the inner array.
 
 ### IntegratorIdx
 
-An integrator idx has a single input, a single index selector, an inner array of n places and n outputs. Every value has a `tot` flag, which indicates whether the aggregate (1) or the average (0) of 
+An integrator idx has a single input, a single label, an inner array of n places and n outputs. Every value has a `tot` flag, which indicates whether the aggregate (1) or the average (0) of 
 the values is displayed.
 
 ### BinPredicate
