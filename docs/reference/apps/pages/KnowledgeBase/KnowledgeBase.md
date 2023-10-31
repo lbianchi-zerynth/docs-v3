@@ -58,12 +58,13 @@ Organic unit inside of which part or all of the cycle of transformation from INP
 
 Organic unit, part of the productive structure, inside of which, a service treatment cycle happens (i.e. water service, electricity, waste disposal, purification…)
 
-
 [//]: # (### Electrical panels)
 
 [//]: # (xxxxxxxxxxxxxxxxxxxxx)
 
-[//]: # (## Nodes)
+## Nodes
+
+Third party linux based gateway hosting an agent from Zerynth (named 4ZeroAgent) enabling data polling from a single industrial machinery by using its digital communication interface.
 
 ## Currencies (ISO 4217)
 
